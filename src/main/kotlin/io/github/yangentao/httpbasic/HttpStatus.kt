@@ -1,5 +1,8 @@
 package io.github.yangentao.httpbasic
 
+/**
+ * Http status, code & reason
+ */
 class HttpStatus(val code: Int, val reason: String = valueOf(code).reason) {
 
     override fun toString(): String {

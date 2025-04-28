@@ -1,5 +1,8 @@
 package io.github.yangentao.httpbasic
 
+/**
+ * Http methods
+ */
 object HttpMethod {
     const val HEAD = "HEAD"
     const val GET = "GET"

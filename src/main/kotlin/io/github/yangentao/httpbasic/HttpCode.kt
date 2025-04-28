@@ -10,6 +10,9 @@ fun httpReasonOfCode(code: Int, miss: String = "No Reason"): String {
     return codeMap[code] ?: miss
 }
 
+/**
+ * Http Status Codes
+ */
 @Suppress("ConstPropertyName")
 object HttpCode {
     const val Continue = 100

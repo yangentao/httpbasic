@@ -4,8 +4,9 @@ package io.github.yangentao.httpbasic
 
 /**
  * Created by entaoyang@163.com on 2018/3/19.
+ * Mime of filename/extname
+ * https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Type
  */
-//https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Type
 object Mimes {
     const val HTML = "text/html"
     const val PLAIN = "text/plain"
