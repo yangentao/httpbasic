@@ -7,7 +7,7 @@ import java.util.*
 /**
  * Ignore case map, http headers
  */
-class HeaderMap(map: Map<String, String>? = null, pairs: Iterable<Pair<String, String>>? = null, private val treeMap: TreeMap<String, String> = TreeMap<String, String>(String.CASE_INSENSITIVE_ORDER)) :
+open class HeaderMap(map: Map<String, String>? = null, pairs: Iterable<Pair<String, String>>? = null, private val treeMap: TreeMap<String, String> = TreeMap<String, String>(String.CASE_INSENSITIVE_ORDER)) :
     MutableMap<String, String> by treeMap {
     init {
         if (map != null) putAll(map)
@@ -18,7 +18,7 @@ class HeaderMap(map: Map<String, String>? = null, pairs: Iterable<Pair<String, S
 /**
  * Ignore case map, http parameters
  */
-class ParameterMap(
+open class ParameterMap(
     map: Map<String, List<String>>? = null,
     pairs: Iterable<Pair<String, List<String>>>? = null,
     private val treeMap: TreeMap<String, ArrayList<String>> = TreeMap<String, ArrayList<String>>(String.CASE_INSENSITIVE_ORDER)
