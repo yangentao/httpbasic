@@ -16,7 +16,7 @@ plugins {
 
 group = "io.github.yangentao"
 
-version = "1.0.3"
+version = "1.0.4"
 val artifactName = "httpbasic"
 val githubLib = "httpbasic"
 val descLib = "Http basic defines, Kotlin."
